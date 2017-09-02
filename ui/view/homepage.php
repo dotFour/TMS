@@ -111,6 +111,10 @@
 			</table>
 		</div>
 	</div>
+	
+	<div id="site-footer">
+		<p> PLACEHOLDER </p>
+	</div>
 </body>
 </html>
 
