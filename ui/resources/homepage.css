@@ -55,7 +55,7 @@ ul {
 	}
 	
 	#page-2 {
-		background: url(../images/village.jpg);
+		/* background: url(../images/village.jpg); */
 		background-attachment: fixed;
 		background-size: cover;
 		
