@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2017 at 03:49 AM
+-- Generation Time: Sep 15, 2017 at 02:32 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -30,8 +30,8 @@ CREATE TABLE `bookings` (
   `bookingid` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
   `roomid` int(11) NOT NULL,
-  `checkin` varchar(10) NOT NULL,
-  `checkout` varchar(10) NOT NULL,
+  `checkin` varchar(11) NOT NULL,
+  `checkout` varchar(11) NOT NULL,
   `person` int(11) NOT NULL,
   `total` int(11) NOT NULL,
   `payment_method` int(11) NOT NULL,
@@ -43,7 +43,8 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`bookingid`, `userid`, `roomid`, `checkin`, `checkout`, `person`, `total`, `payment_method`, `requests`) VALUES
-(1, 1, 3, '5-May-2017', '7-May-2017', 1, 13280, 1, 'None');
+(1, 1, 3, '5-May-2017', '7-May-2017', 1, 13280, 1, 'None'),
+(5, 1, 2, '2-May-2017', '4-May-2017', 1, 13280, 0, ' ');
 
 -- --------------------------------------------------------
 
@@ -149,7 +150,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userid`, `name`, `email`, `contactno`, `password`, `usertype`) VALUES
-(1, 'Simon', 'r.simon@gmail.com', '11111111111111', '1', 0);
+(1, 'Simon', 'r.simon@gmail.com', '11111111111111', '1', 0),
+(2, 'Garbirel Durandal', 'gd@tms.com', '13745793541', '1', 1);
 
 --
 -- Indexes for dumped tables
@@ -205,7 +207,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `bookingid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `bookingid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `packages`
 --
@@ -230,7 +232,7 @@ ALTER TABLE `tickets`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
