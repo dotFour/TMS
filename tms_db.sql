@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 15, 2017 at 02:32 PM
+-- Generation Time: Apr 05, 2018 at 05:47 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -151,7 +151,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`userid`, `name`, `email`, `contactno`, `password`, `usertype`) VALUES
 (1, 'Simon', 'r.simon@gmail.com', '11111111111111', '1', 0),
-(2, 'Garbirel Durandal', 'gd@tms.com', '13745793541', '1', 1);
+(2, 'Garbirel Durandal', 'gd@tms.com', '13745793541', '1', 1),
+(3, 'Admin', 'a@a.a', '13745793541', 'a', 1),
+(4, 'User', 'u@u.u', '13745793541', 'u', 0);
 
 --
 -- Indexes for dumped tables
@@ -232,7 +234,7 @@ ALTER TABLE `tickets`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -20,6 +20,7 @@
 	<div id="dashboard">
 		<fieldset>
 			<legend> Users </legend>
+				<button> Add </button>
 				<table border="1">
 					<tr>
 						<td> ID </td>
@@ -27,9 +28,6 @@
 						<td> Email </td>
 						<td> Contact No </td>
 						<td> User Type </td>
-						<td> Add </td>
-						<td> Edit </td>
-						<td> Remove </td>
 					</tr>
 					
 					<?php
@@ -41,6 +39,8 @@
 								<td>$user[email]</td>
 								<td>$user[contactno]</td>
 								<td>$user[usertype]</td>
+								<td> <button> Edit </button> </td>
+								<td> <button> Remove </button> </td>								
 							</tr>";
 						}
 						?>

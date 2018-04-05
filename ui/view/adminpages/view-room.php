@@ -20,6 +20,7 @@
 	<div id="dashboard">
 		<fieldset>
 			<legend> Users </legend>
+				<button> Add </button>
 				<table border="1" cellspacing="5">
 					<tr>
 						<td> Room ID </td>
@@ -30,9 +31,6 @@
 						<td> Details </td>
 						<td> Capacity</td>
 						<td> Price </td>
-						<td> Add </td>
-						<td> Edit </td>
-						<td> Remove </td>
 					</tr>
 					
 					<?php
@@ -47,6 +45,8 @@
 								<td>$room[details]</td>
 								<td>$room[capacity]</td>
 								<td>$room[price]</td>
+								<td> <button> Edit </button></td>
+								<td> <button> Remove </button></td>
 							</tr>";
 						}
 						?>

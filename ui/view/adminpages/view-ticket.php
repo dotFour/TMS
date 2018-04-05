@@ -20,6 +20,7 @@
 	<div id="dashboard">
 		<fieldset>
 			<legend> View Tickets </legend>
+				<button> Add </button>
 				<table border="1" cellspacing="5">
 					<tr>
 						<td> Ticket ID </td>
@@ -30,9 +31,6 @@
 						<td> Type </td>
 						<td> Description </td>
 						<td> Response </td>
-						<td> Add </td>
-						<td> Edit </td>
-						<td> Remove </td>
 					</tr>
 					<?php
 						$tickets = getAllTickets();
@@ -46,6 +44,8 @@
 								<td>$ticket[type]</td>
 								<td>$ticket[description]</td>
 								<td>$ticket[response]</td>
+								<td> <button>Edit</button </td>
+								<td> <button>Remove</button </td>
 							</tr>";
 						}
 						?>

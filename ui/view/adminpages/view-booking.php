@@ -21,6 +21,7 @@
 	<div id="dashboard">
 		<fieldset>
 			<legend>View Bookings </legend>
+				<button> Add </button>
 				<table border="1" cellspacing="5">
 					<tr>
 						<td>Booking ID </td>
@@ -32,9 +33,6 @@
 						<td> Total Amount</td>
 						<td> Payment Method </td>
 						<td> Requests</td>
-						<td> Add </td>
-						<td> Edit </td>
-						<td> Remove </td>
 					</tr>
 					
 					<?php
@@ -50,6 +48,8 @@
 								<td>$booking[total]</td>
 								<td>$booking[payment_method]</td>
 								<td>$booking[requests]</td>
+								<td> <button> Edit </button> </td>
+								<td> <button> Remove </button> </td>
 							</tr>";
 						}
 					?>

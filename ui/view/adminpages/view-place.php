@@ -20,14 +20,12 @@
 	<div id="dashboard">
 		<fieldset>
 			<legend> View Places </legend>
+				<button> Add </button>
 				<table border="1" cellspacing="5">
 					<tr>
 						<td>Place ID </td>
 						<td>Place Name </td>
 						<td> Division</td>
-						<td> Add </td>
-						<td> Edit </td>
-						<td> Remove </td>
 					</tr>
 					
 					<?php
@@ -37,6 +35,8 @@
 								<td>$place[placeid]</td>
 								<td>$place[name]</td>
 								<td>$place[division]</td>
+								<td> <button> Edit </button> </td>
+								<td> <button> Remove </button> </td>
 							</tr>";
 						}
 						?>
