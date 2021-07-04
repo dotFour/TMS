@@ -42,6 +42,11 @@
 			include_once(APP_ROOT."/ui/view/contact.php");
 			break;
 			
+		case "logout":
+			include_once(APP_ROOT."/ui/view/logout.php");
+			break;
+			
+			
 			
 		default:
 			header('HTTP/1.1 404 Not Found');

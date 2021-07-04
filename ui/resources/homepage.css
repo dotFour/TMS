@@ -2,9 +2,8 @@ ul {
 		list-style-type: none;
 		margin: 0px;
 		padding: 0px;
-		width: Auto;
-		height: Auto;
 		background-color: #f1f1f1;
+		top: 0;
 	}
 	
 	li {
@@ -43,6 +42,8 @@ ul {
 	body {
 		margin: 0px;
 		padding: 0px;
+		display: block;
+		overflow: auto;
 		
 	}
 	
@@ -54,10 +55,10 @@ ul {
 	}
 	
 	#page-2 {
-		background: url(../images/village.jpg);
+		/* background: url(../images/village.jpg); */
 		background-attachment: fixed;
 		background-size: cover;
-		height: 100%;
+		
 		
 		
 	}
@@ -78,12 +79,23 @@ ul {
 		width: 50%;
 	}
 	
+	#site-footer {
+		padding: 0;
+		margin: 0;
+		height: 15%;
+		color: white;
+		background-color: #0a1429;
+		font-family: Arvo;
+		width: 100%;
+		bottom: 0;
+	}
+	
 	.site-nav {
 		margin: 0px;
 		padding: 0px;
-		position: relative;
-		top: 0px;
-		right: 10px;
+		position: absolute;
+		top: 3%;
+		right: 3%;
 		
 	}
 	
@@ -91,7 +103,9 @@ ul {
 		padding-left: 15%;
 		padding-right: 10%;
 		padding-top: 2%;
+		padding-bottom: 5%;
 		margin: 0;
+		overflow: hidden;
 	}
 	
 	.place-name {
